@@ -1,0 +1,10 @@
+mulin=-5:0.1:5;
+Kstat=((-K)/(T1*T2))*(alfa1+alfa2*2*mulin+alfa3*3*mulin.^2+alfa4*4*mulin.^3);
+plot(mulin,Kstat);
+hold on;
+ylabel ('Kstat(ulin)');
+xlabel ('ulin');
+axis ([-5 5 0 20]);
+title ('Wykres wzmocnienia statycznego transmitancji');
+hold off;
+%saveas(gcf,'Trans.png');
